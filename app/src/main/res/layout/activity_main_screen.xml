@@ -59,4 +59,13 @@
         android:layout_toRightOf="@+id/userNumber"
         android:layout_toEndOf="@+id/userNumber" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Text"
+        android:id="@+id/randomButton"
+        android:layout_alignTop="@+id/sendSMSButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
