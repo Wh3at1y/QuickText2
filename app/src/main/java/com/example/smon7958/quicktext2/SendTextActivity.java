@@ -13,7 +13,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
- * @author Emily Orton Sydney Nemelka
+ * @author Emily Orton Sydney Nemelka, Sam Montoya, Kyle Koch
  */
 public class SendTextActivity extends Activity {
  // Declaration section
