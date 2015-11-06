@@ -13,9 +13,10 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
- * Created by smon7958 on 11/2/15.
+ * @author Emily Orton Sydney Nemelka
  */
 public class SendTextActivity extends Activity {
+ // Declaration section
     private EditText smsMessageField;
     private EditText smsNumberField;
     private Button sendSMSButton;
@@ -27,6 +28,7 @@ public class SendTextActivity extends Activity {
     private ArrayList<String> randomMessage;
 
     @Override
+    // onCreate method, calls the message field, sets sam and Emily's number. Calls a random method.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
@@ -45,12 +47,21 @@ public class SendTextActivity extends Activity {
         setupListeners();
     }
 
+    /**
+     * Creates the messages being used for the randomButton.
+     */
     private void  buildRandomMessage() {
         randomMessage.add("Hello there ^.^");
         randomMessage.add("Clubbin' time =^-^=");
         randomMessage.add("I am the SEAL ⊙ω⊙");
         randomMessage.add("Gotta be FRESH o.O");
         randomMessage.add("KKK");
+        randomMessage.add("Whatter THOOOOOOOOOOOSE??????");
+        randomMessage.add("Why not WOBAFUAT");
+        randomMessage.add("Count Duko SODUKU");
+        randomMessage.add("LEDELLEDELLEDELLEEE");
+        randomMessage.add("Can you feel it now MR CRABS???? (・ω<)");
+
     }
 
     private String randomMessage(){
@@ -62,6 +73,9 @@ public class SendTextActivity extends Activity {
 
     }
 
+    /**
+     * Sets up the listeners for the sendSMSButton, randomButton, contact and rhe message widgets.
+     */
     private void setupListeners() {
         sendSMSButton.setOnClickListener(new View.OnClickListener() {
             @Override
